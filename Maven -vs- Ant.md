@@ -1,14 +1,23 @@
 
-Maven : project and dependency management tool,  it's like a framework.  
-Ant: it's just a build tool,  it's like a toolbox.  
+**Maven** : project and dependency management tool,  it's like a framework.  
+**Ant**: it's just a build tool,  it's like a toolbox.  
 
-Maven: we just need to tell what to do, as it relies on convention  
+**Maven**: we just need to tell `what to do`, as it relies on convention  
   like, where to read the source from or where to write the target to.  
   for ex: we can say in a maven script that a project should be packaged as a WAR file, and maven knows how to handle that.  
-Ant: we need to tell how to do it, here we need to tell Ant where to read the source from and where to write the output to.   
+**Ant**: we need to tell `how to do` it, here we need to tell Ant where to read the source from and where to write the output to.   
 
-Maven: configuration file is pom.xml.   
-Ant: configuration file is build.xml.   
+**Maven**: configuration file is `pom.xml`.   
+**Ant**: configuration file is `build.xml`.   
+
+**Maven**: maven plug-ins are `reusable`  
+**Ant**: ant scripts are not `reusable`  
+
+**Maven**: It follows `declarative` style  
+**Ant**: It follows `procedural` style  
+
+**Maven**: it has `lifecycle`  
+**Ant**: It does not have `lifecycle`  
 
 This is how a `build.xml` looks like:  
 ```xml
