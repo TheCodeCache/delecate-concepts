@@ -3,11 +3,11 @@
 - It is `Bi-directional` communication.  
 - The connection is kept alive until terminated by client or by server  
 - WebSocket uses `long lived persistent connection`  
-- It is `stateful`, Obv. when we've a long lived persistent connection, then we maintain states of data or the information,  
+- It is `stateful`, Obv. when we've a long lived persistent connection, then we can maintain states of information,  
   thus could do the computation on the data seen so far on the connection.  
 - URL scheme: `ws://` or `wss://` (secured version)  
 - It uses TCP for reliable data transfer over the network  
-- It is mainly used by `real-time` application (trading app, like CoinDCX-bitcoins, monitoring, notifications, Gaming app, etc.)  
+- It is mainly used by `real-time` application (trading app, like CoinDCX-bitcoins, Gaming app, etc.)  
 - It is `faster` than HTTP  
 
     ![image](https://user-images.githubusercontent.com/26399543/142745671-9d1b172e-cd61-4697-95ff-d40e30d45043.png)
