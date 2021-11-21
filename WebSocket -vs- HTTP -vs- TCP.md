@@ -6,7 +6,7 @@
 - WebSocket uses `long lived persistent connection`  
 - It is `stateful`, Obv. when we've a long lived persistent connection, then we can maintain states of information,  
   thus could do the computation on the data seen so far on the connection.  
-- URL scheme: `ws://` or `wss://` (secured version)  
+- URL scheme: `ws://` at `port 80` or `wss://` at `port 443` (secured version)  
 - It supports only `TCP` as of now under the hood for reliable data transfer over the network  
 - It is mainly used by `real-time` application (trading app, like CoinDCX-bitcoins, Gaming app, etc.)  
 - It is `faster` than HTTP  
@@ -22,7 +22,7 @@
 - HTTP uses `short lived transient connection`  
 - It is `stateless`, Obv. with every http request (be it client or server), it establishes a brand new connection,  
   thus has no idea about the information in the previous request or connection   
-- URL scheme: `http://` or `https://` (secured version)  
+- URL scheme: `http://` at `port 80` or `https://` at `port 443` (secured version)  
 - It supports `TCP`  and other N/W layer protocol that provides reliable data transfer over the network  
 - It is mainly used by simple `RestFul` applications  
 - It is `slower` than WebSocket  
