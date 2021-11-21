@@ -55,4 +55,5 @@ void main(){
 Thus, a `function` can be invoked directly as it is,  
   however, to invoke a `method` we must need either an object or the enclosing Class type.  
 
-
+**Note:**  
+Java does not have functions, only methods, which must be attached to objects.  
