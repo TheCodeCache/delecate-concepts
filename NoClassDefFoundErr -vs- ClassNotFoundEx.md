@@ -42,7 +42,7 @@ at com.Main.main(MainClass.java:17)
   The required class definition was present at compile time, but it was missing at runtime  
 - It occurs when required class definition is missing at runtime.
 
-A basic typical example: `Exception in thread "main" java.lang.NoClassDefFoundError: com/example/samples/array/A`
+A basic typical example: `Exception in thread "main" java.lang.NoClassDefFoundError: com/example/samples/array/A`  
 
 ```java
 class A {
