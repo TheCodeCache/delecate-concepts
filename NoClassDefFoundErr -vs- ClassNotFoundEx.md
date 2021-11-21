@@ -4,7 +4,7 @@ ClassNotFoundException and NoClassDefFoundError occur when a particular class is
 # ClassNotFoundException
 
 - It is a `runtime exception` thrown by an `application` when it tries to load a class at runtime  
-  using the `Class.forName()` or `loadClass()` or `findSystemClass()` methods, 
+  using the `Class.forName()` or `loadClass()` or `findSystemClass()` methods,  
   and the class with specified name are not found in the `classpath`  
 - It occurs when `classpath is not updated with required JAR files`.
 
@@ -66,6 +66,42 @@ at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
 at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
 at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
 at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+```
+
+# Important NOTE:  
+
+What if, instead of `removing` an existing .class file, we `replace` it with a totally different .class file 
+  but with same class name, off-course, with the same package.  
+So, It will work using the latest .class file w/o any problem, and in fact this is how it works in reality,   
+  and should work ideally, otherwise we'd lose the concepts of `patches` or `updates` or `upgrades`   
+For ex:  
+  in the previous code snippet example,  
+  if we `separately compile` the below definition of class A and replace the existing `A.class` in the `classpath`:  
+
+```java
+import java.io.Serializable;
+
+public class A implements Serializable {
+  /**
+   * 
+   */
+  private static final long serialVersionUID = 3989797797L;
+  private String msg = "hello";
+  // some code
+
+  public String getMsg() {
+    return msg;
+  }
+
+  public void setMsg(String msg) {
+    this.msg = msg;
+  }
+
+  @Override
+  public String toString() {
+    return this.msg;
+  }
+}
 ```
 
 **Reference:**  
