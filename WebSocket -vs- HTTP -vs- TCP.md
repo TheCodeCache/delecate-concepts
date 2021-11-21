@@ -17,7 +17,7 @@
 # HTTP
 - It is an `Application Layer` protocol  
 - It is `Uni-directional` communication.  
-- - It is like a `half-duplex` channel comm.  
+- It is like a `half-duplex` channel comm.  
 - The connection is immediately terminated with each http request/response  
 - HTTP uses `short lived transient connection`  
 - It is `stateless`, Obv. with every http request (be it client or server), it establishes a brand new connection,  
