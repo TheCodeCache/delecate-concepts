@@ -1,4 +1,5 @@
 # WebSocket
+- It is an `Application Layer` protocol  
 - It is `Bi-directional` communication.  
 - The connection is kept alive until terminated by client or by server  
 - WebSocket uses `long lived persistent connection`  
@@ -8,12 +9,12 @@
 - It uses TCP for reliable data transfer over the network  
 - It is mainly used by `real-time` application (trading app, like CoinDCX-bitcoins, monitoring, notifications, Gaming app, etc.)  
 - It is `faster` than HTTP  
-- It is an `Application Layer` protocol
 
     ![image](https://user-images.githubusercontent.com/26399543/142745671-9d1b172e-cd61-4697-95ff-d40e30d45043.png)
 
 
 # HTTP
+- It is an `Application Layer` protocol  
 - It is `Uni-directional` communication.  
 - The connection is immediately terminated with each http request/response  
 - HTTP uses `short lived transient connection`  
@@ -23,7 +24,6 @@
 - It uses TCP for reliable data transfer over the network  
 - It is mainly used by simple `RestFul` applications  
 - It is `slower` than WebSocket  
-- It is an `Application Layer` protocol
 
     ![image](https://user-images.githubusercontent.com/26399543/142745703-a1e16724-f035-4af5-ace6-82522766be86.png)
 
