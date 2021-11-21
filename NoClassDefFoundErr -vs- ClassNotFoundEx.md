@@ -1,4 +1,4 @@
-ClassNotFoundException and NoClassDefFoundError occur when a particular class is not found at runtime.  
+`ClassNotFoundException` and `NoClassDefFoundError` occur when a particular class is not found at runtime.  
   However, they occur at different scenarios.  
 
 # ClassNotFoundException
