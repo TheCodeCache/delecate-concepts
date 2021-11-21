@@ -70,7 +70,7 @@ at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 
 # Important NOTE:  
 
-What if, instead of `removing` an existing .class file, we `replace` it with a totally different .class file 
+What if, instead of `removing` an existing .class file, we `replace` it with a totally different .class file  
   but with same class name, off-course, with the same package.  
 So, It will work using the latest .class file w/o any problem, and in fact this is how it works in reality,   
   and should work ideally, otherwise we'd lose the concepts of `patches` or `updates` or `upgrades`   
