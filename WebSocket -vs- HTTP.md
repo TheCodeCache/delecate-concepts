@@ -34,6 +34,7 @@
   it first establishes the connection b/w client and server  
 - Most of the Application Layer protocol such as `WebSocket` or `HTTP` uses TCP under the hood,  
   in order for reliable data transfer over the network or internet  
+- It uses `internet protocol` i.e. `IP` under the hood, hence sometimes it is also called as `TCP/IP` protocol  
 
 **Reference:**  
 1. https://www.geeksforgeeks.org/what-is-web-socket-and-how-it-is-different-from-the-http/  
