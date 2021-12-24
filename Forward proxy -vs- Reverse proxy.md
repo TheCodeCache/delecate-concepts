@@ -45,6 +45,21 @@ Because clients interact directly with the proxy, they only need to know its hos
 An admin can configure a reverse proxy `to load-balance traffic`  
 so that requests can be more evenly distributed to the backend servers and `improve overall performance`.  
 
+```shell
+server {
+    listen 80;
+
+    server_name github.com;
+
+    location / {
+        proxy_pass http://127.0.0.1:8080/;
+    }
+}
+```
+Through the above cofiguration, `we can direct outside client's request to the servers on our internal network running on un-conventional random ports`  
+For ex: we can run our webserver on a radon port like 6774, which is not the default port of a web-server (usually 80), but using the above reverse proxy configuration,  
+we can redirect trafiic from outside clients to a server running on 6774 port number.  
+
 # Classic Example - 
 **Forward Proxy**:  
 When we want our client computers or users from our internal network to stop accessing websites like facebook.com or youtube.com or any entertaining or adult sites then we can use forward proxy to restrict their accesses.  
