@@ -45,6 +45,12 @@ Because clients interact directly with the proxy, they only need to know its hos
 An admin can configure a reverse proxy `to load-balance traffic`  
 so that requests can be more evenly distributed to the backend servers and `improve overall performance`.  
 
+# Classic Example - 
+**Forward Proxy**:  
+When we want our client computers or users from our internal network to stop accessing websites like facebook.com or youtube.com or any entertaining or adult sites then we can use forward proxy to restrict their accesses.  
+**Reverse Proxy**:  
+When we want our internal servers to protect from unauthorized access from outside users/clients/server computers, then reverse proxy can help us in this case.  
+
 **Reference:**  
 1. https://www.jscape.com/blog/bid/87783/forward-proxy-vs-reverse-proxy
 2. https://www.strongdm.com/blog/difference-between-proxy-and-reverse-proxy
