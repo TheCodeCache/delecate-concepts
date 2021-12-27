@@ -6,7 +6,7 @@ Even though `CPU load` and `CPU usage` sound similar, they are not interchangeab
 **CPU Load:**  
 Let's say we have a single-core system, and our CPU load average is always below 0.6.  
 This indicates that every process that needs to use the CPU can use it instantly without waiting.  
-If the CPU load average is above 1,  
+If the `CPU load` average is above 1,  
 this indicates that there are processes that need to use the CPU but cannot at the moment due to the unavailability of the CPU.  
 
 However, the load average above 1 in a multi-processor system won’t be an issue since more cores are readily available.  
@@ -25,8 +25,8 @@ cpu cores	: 1
 ```
 
 **CPU Usage:**  
-`CPU usage` is the percentage of time a CPU takes to process non-idle tasks.  
-`CPU Usage` can only be measured over a specified interval of time.  
+It is the percentage of time a CPU takes to process non-idle tasks.  
+It can only be measured over a specified interval of time.  
 We can determine the `CPU usage` by taking the percentage of time spent idling and subtracting it from 100.  
 
 **Reference:**  
